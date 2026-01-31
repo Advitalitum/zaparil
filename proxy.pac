@@ -1,4 +1,7 @@
-const domains = ['twitter.com', 'twimg.com', 't.co', 'x.com', 'spotify.com', 'spotifycdn.com', 'scdn.co'];
+const domains = [
+  'twitter.com', 'twimg.com', 't.co', 'x.com',
+  'spotify.com', 'spotifycdn.com', 'scdn.co'
+  ];
 const domainsWithDotPrefix = domains.map(domain => '.' + domain);
 
 function FindProxyForURL(url, host) {
