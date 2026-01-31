@@ -4,11 +4,11 @@ function FindProxyForURL(url, host) {
   const useProxy = domains.some(element => dnsDomainIs(host, element) || dnsDomainIs(host, "." + element));
 
   if (useProxy) {
-    alert("zaparil_proxy");
+    // alert("zaparil_proxy");
 	  return "PROXY localhost:18080;DIRECT";
     // return "HTTPS localhost:18080;HTTP localhost:18080;SOCKS5 localhost:18080;PROXY localhost:18080;DIRECT";
   }
 
-  alert("zaparil_direct");  
+  // alert("zaparil_direct");  
   return "DIRECT";
 }
