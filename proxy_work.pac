@@ -1,7 +1,8 @@
 const domainsList = [
   'spotify.com', 'spotifycdn.com', 'scdn.co',
   'twitter.com', 'twimg.com', 't.co', 'x.com',
-  'medium.com'
+  'medium.com',
+  'youtube.com', 'googlevideo.com', 'ytimg.com', 'youtu.be', 'ggpht.com','youtubei.googleapis.com'
 ];
 
 const domains = new Set(domainsList);
