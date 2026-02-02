@@ -16,7 +16,7 @@ function FindProxyForURL(_, host) {
   if (useProxy) {
     // alert('zaparil_proxy');
     
-    return 'PROXY localhost:18080;PROXY localhost:8080;DIRECT';
+    return 'PROXY localhost:18080;PROXY localhost:8080;PROXY localhost:28080;DIRECT';
   }
 
   // alert('zaparil_direct');
