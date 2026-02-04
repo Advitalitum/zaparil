@@ -1,7 +1,8 @@
 const domainsList = [
   'spotify.com', 'spotifycdn.com', 'scdn.co',
   'twitter.com', 'twimg.com', 't.co', 'x.com',
-  'medium.com'
+  'medium.com',
+  'sponsor.ajay.app'
 ];
 
 const domains = new Set(domainsList);
@@ -22,4 +23,5 @@ function FindProxyForURL(_, host) {
   // alert('zaparil_direct');
   
   return 'DIRECT';
+
 }
