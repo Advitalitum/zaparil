@@ -14,7 +14,7 @@ function FindProxyForURL(_, host) {
   if (useProxy) {
     // alert('zaparil_proxy');
     
-    return 'HTTPS 127.0.0.1:8055;DIRECT';
+    return 'SOCKS 127.0.0.1:8055;PROXY 127.0.0.1:8055;DIRECT';
   }
 
   // alert('zaparil_direct');
