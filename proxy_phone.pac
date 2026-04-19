@@ -14,7 +14,7 @@ function FindProxyForURL(_, host) {
   if (useProxy) {
     // alert('zaparil_proxy');
     
-    return 'PROXY localhost:8055;DIRECT';
+    return 'SOCKS5 localhost:8055;DIRECT';
   }
 
   // alert('zaparil_direct');
