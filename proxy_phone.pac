@@ -6,7 +6,6 @@ const domains = new Set(domainsList);
 
 const domainsWithDotPrefix = domainsList.map(domain => '.' + domain);
 
-
 function FindProxyForURL(_, host) {
 
   const useProxy = domains.has(host) || domainsWithDotPrefix.some(domainWithDotPrefix => host.endsWith(domainWithDotPrefix));
