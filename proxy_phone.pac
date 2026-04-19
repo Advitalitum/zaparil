@@ -14,7 +14,7 @@ function FindProxyForURL(_, host) {
   if (useProxy) {
     // alert('zaparil_proxy');
     
-    return 'PROXY 0.0.0.0:8056;DIRECT';
+    return 'PROXY localhost:8056;DIRECT';
   }
 
   // alert('zaparil_direct');
