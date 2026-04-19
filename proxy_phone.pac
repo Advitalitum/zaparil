@@ -12,7 +12,7 @@ function FindProxyForURL(_, host) {
 
   if (useProxy) {
     
-    return 'SOCKS 127.0.0.1:8055';
+    return 'HTTPS 127.0.0.1:8055;SOCKS 127.0.0.1:8055';
   }
   
   return 'DIRECT';
