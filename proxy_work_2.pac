@@ -3,8 +3,7 @@ const domainsList = [
   'twitter.com', 'twimg.com', 't.co', 'x.com',
   'medium.com',
   'youtube.com', 'googlevideo.com', 'ytimg.com', 'youtu.be', 'ggpht.com', 'youtubei.googleapis.com', 'sponsor.ajay.app',
-  'jetbrains.com', 'intellij.net', 'jetbrains.ai', 'myjetbrains.com', 'jetbrains.com.cn' 
-];
+  'jetbrains.com', 'intellij.net', 'jetbrains.ai', 'myjetbrains.com', 'jetbrains.com.cn', 'jetbrains.dev', 'jetbrains.net', 'jetbrains.org', 'jetbrains.space', 'jetbrains.ru', 'jb.gg'];
 
 const domains = new Set(domainsList);
 
