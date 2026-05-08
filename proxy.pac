@@ -16,12 +16,9 @@ function FindProxyForURL(_, host) {
   const useProxy = domains.has(host) || domainsWithDotPrefix.some(domainWithDotPrefix => host.endsWith(domainWithDotPrefix));
 
   if (useProxy) {
-    // alert('zaparil_proxy');
     
     return 'PROXY localhost:18080;PROXY localhost:8080;DIRECT';
   }
-
-  // alert('zaparil_direct');
   
   return 'DIRECT';
 
