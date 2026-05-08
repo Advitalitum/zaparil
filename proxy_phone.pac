@@ -11,8 +11,7 @@ function FindProxyForURL(_, host) {
   const useProxy = domains.has(host) || domainsWithDotPrefix.some(domainWithDotPrefix => host.endsWith(domainWithDotPrefix));
 
   if (useProxy) {
-    
-    return 'SOCKS 127.0.0.1:8055';
+   return 'SOCKS 127.0.0.1:8055';
   }
   
   return 'DIRECT';
