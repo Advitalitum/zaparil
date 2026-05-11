@@ -25,7 +25,7 @@ function FindProxyForURL(_, host) {
   const useOtherProxy = otherDomains.has(host) || otherDomainsWithDotPrefix.some(domainWithDotPrefix => host.endsWith(domainWithDotPrefix));
 
   if (useOtherProxy) {
-   return 'PROXY 127.0.0.1:9090';
+   return 'PROXY 127.0.0.1:8055';
   }
   
   return 'DIRECT';
