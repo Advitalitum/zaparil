@@ -19,7 +19,7 @@ function FindProxyForURL(_, host) {
   const useYtProxy = ytDomains.has(host) || ytDomainsWithDotPrefix.some(domainWithDotPrefix => host.endsWith(domainWithDotPrefix));
 
   if (useYtProxy) {
-   return 'SOCKS 127.0.0.1:8055';
+   return 'SOCKS 127.0.0.1:9090';
   }
 
   const useOtherProxy = otherDomains.has(host) || otherDomainsWithDotPrefix.some(domainWithDotPrefix => host.endsWith(domainWithDotPrefix));
