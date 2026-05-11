@@ -25,7 +25,7 @@ function FindProxyForURL(_, host) {
   const useOtherProxy = otherDomains.has(host) || otherDomainsWithDotPrefix.some(domainWithDotPrefix => host.endsWith(domainWithDotPrefix));
 
   if (useOtherProxy) {
-   return 'SOCKS5 127.0.0.1:9090';
+   return 'SOCKS5 127.0.0.1:9090;DIRECT';
   }
   
   return 'DIRECT';
