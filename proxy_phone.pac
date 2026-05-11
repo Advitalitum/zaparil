@@ -1,18 +1,31 @@
-const domainsList = [
-  'youtube.com','googlevideo.com', 'ytimg.com', 'youtu.be', 'ggpht.com', 'youtubei.googleapis.com', 'sponsor.ajay.app',
+const ytDomainsList = [
+  'youtube.com','googlevideo.com', 'ytimg.com', 'youtu.be', 'ggpht.com', 'youtubei.googleapis.com', 'sponsor.ajay.app'
+];
+
+const otherDomainsList = [
   't.me'
 ];
 
-const domains = new Set(domainsList);
+const ytDomains = new Set(ytDomainsList);
 
-const domainsWithDotPrefix = domainsList.map(domain => '.' + domain);
+const ytDomainsWithDotPrefix = ytDomainsList.map(domain => '.' + domain);
+
+const otherDomains = new Set(otherDomainsList);
+
+const otherDomainsWithDotPrefix = otherDomainsList.map(domain => '.' + domain);
 
 function FindProxyForURL(_, host) {
 
-  const useProxy = domains.has(host) || domainsWithDotPrefix.some(domainWithDotPrefix => host.endsWith(domainWithDotPrefix));
+  const useYtProxy = ytDomains.has(host) || ytDomainsWithDotPrefix.some(domainWithDotPrefix => host.endsWith(domainWithDotPrefix));
 
-  if (useProxy) {
+  if (useYtProxy) {
    return 'SOCKS 127.0.0.1:8055';
+  }
+
+  const useOtherProxy = otherDomains.has(host) || otherDomainsWithDotPrefix.some(domainWithDotPrefix => host.endsWith(domainWithDotPrefix));
+
+  if (useOtherProxy) {
+   return 'SOCKS 127.0.0.1:9090';
   }
   
   return 'DIRECT';
