@@ -1,5 +1,6 @@
 const domainsList = [
-  'youtube.com','googlevideo.com', 'ytimg.com', 'youtu.be', 'ggpht.com', 'youtubei.googleapis.com', 'sponsor.ajay.app'
+  'youtube.com','googlevideo.com', 'ytimg.com', 'youtu.be', 'ggpht.com', 'youtubei.googleapis.com', 'sponsor.ajay.app',
+'t.me'
 ];
 
 const domains = new Set(domainsList);
