@@ -3,7 +3,7 @@ const ytDomainsList = [
 ];
 
 const otherDomainsList = [
-  't.me'
+  't.me', 'telegram.org'
 ];
 
 const ytDomains = new Set(ytDomainsList);
