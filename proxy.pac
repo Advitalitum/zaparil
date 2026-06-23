@@ -3,7 +3,8 @@ const domainsList = [
   'twitter.com', 'twimg.com', 't.co', 'x.com',
   'medium.com',
   'sponsor.ajay.app',
-  'telegram.org', 't.me'
+  'telegram.org', 't.me',
+  '0x0a.de', 'weg.fan', 'celestemods.com'
 ];
 
 const domains = new Set(domainsList);
