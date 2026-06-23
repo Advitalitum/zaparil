@@ -4,7 +4,7 @@ const domainsList = [
   'medium.com',
   'sponsor.ajay.app',
   'telegram.org', 't.me',
-  '0x0a.de', 'weg.fan', 'celestemods.com'
+  '0x0a.de', 'weg.fan', 'celestemods.com', 'maddie480.ovh'
 ];
 
 const domains = new Set(domainsList);
